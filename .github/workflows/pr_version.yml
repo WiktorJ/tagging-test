@@ -1,7 +1,13 @@
 name: PR version
 on:
   pull_request:
-        types: [open, reopen, synchronize, label, unlabel]
+        types: 
+                - opened
+                - reopened
+                - synchronize 
+                - labeled 
+                - unlabeled
+
 jobs:
   file_tag:
     runs-on: ubuntu-latest
